@@ -1,0 +1,32 @@
+O projeto consiste em gerar uma aplicação na qual o usuário irá receber sílabas e formará palavras.
+
+A aplicação deve mostrar as sílabas em uma fila, as quais possam ser arrastadas para uma esteira de criação de palavras.
+A aplicação deve verificar se a palavra existe e se as sílabas utilizadas sãos as corretas para a palavra.
+A aplicação deve salvar um nome de usuário com seu histórico.
+A aplicação deve salvar um histórico com palavras acertadas e erradas, bem como as sílabas utilizadas e seus usuários.
+
+Coleções utilizadas:
+User:
+	id: serial
+	username: String unique NN
+	
+Syllable:
+	id: serial
+	name: String unique NN
+	
+Word:
+	id: serial
+	name: String unique NN
+    syllables: array:String NN
+
+History:
+	id: serial
+	is_correct: boolean NN
+	exists: enum NN
+	user: serial fk
+    syllables: array:int NN
+
+enum_Exists:
+	_id: serial
+	num: int NN
+	name: String

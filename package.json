@@ -1,0 +1,24 @@
+{
+  "name": "mypalavras",
+  "version": "1.0.0",
+  "description": "Uma aplicacao de teste, mas divertida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "vuejs",
+    "javascript",
+    "personal_project"
+  ],
+  "author": "Jairo Nascimento de Sousa Filho",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.19.0",
+    "koa": "^2.7.0",
+    "koa-middlewares": "^6.0.0",
+    "koa-router": "^7.4.0",
+    "mongodb": "^3.2.7"
+  }
+}
